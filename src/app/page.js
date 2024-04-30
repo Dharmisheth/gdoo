@@ -29,7 +29,7 @@ const SignUp = () => {
                 </svg>
               </button>
             </div>
-            <h1 className="text-2xl font-bold gap-5 pb-3">Sign up</h1>
+            <h1 className="text-3xl font-bold gap-5 pb-3">Sign up</h1>
             <p style={{ color: "#6D6D6D" }} className="text-sm pb-5">
               Please enter your legal name. This information will be used to
               verify your account.
@@ -39,18 +39,19 @@ const SignUp = () => {
                 <label className="text-sm font-semibold pb-1">Name</label>
                 <input
                   placeholder="Aries"
-                  className="block rounded-full px-3 py-2 "
+                  className="block rounded-full px-3 py-2.5 "
                 ></input>
 
                 <label className="text-sm font-semibold pb-1 pt-5">Phone</label>
                 <input
-                  placeholder="US      +1" 
-                  className="block rounded-full px-3 py-2 "
+                  placeholder="US      +1"
+                  type="number" 
+                  className="block rounded-full px-3 py-2.5 "
                 ></input>
                 <div className="flex flex-col justify-between pt-72 pb-9">
                   <button
                     type="submit"
-                    className="submit rounded-full px-3 py-2"
+                    className="submit rounded-full px-3 py-2.5"
                   >
                     <p className="text-white text-sm font-semibold grid items-center">
                       Continue
