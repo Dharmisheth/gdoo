@@ -45,7 +45,7 @@ const SignUp = () => {
                 <label className="text-sm font-semibold pb-1 pt-5">Phone</label>
                 <input
                   placeholder="US      +1"
-                  type="number" 
+                  type="number"
                   className="block rounded-full px-3 py-2.5 "
                 ></input>
                 <div className="flex flex-col justify-between pt-72 pb-9">

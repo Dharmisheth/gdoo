@@ -73,3 +73,19 @@ body {
 .bcd{
   padding: 190px 31px 200px 30px ;
 }
+
+.card{
+  background: linear-gradient(90.43deg, #9F8CF0 0.37%, rgba(178, 163, 243, 0.66) 53.52%, rgba(145, 127, 218, 0.22) 100.84%);
+  size: cover;
+  width:92%;
+  height: 100%;  
+}
+
+.homebtn{
+  background-color: #9F8CF0;
+  box-shadow: #8177AD 0px 6px 0px 0px;
+}
+
+.card1{
+  box-shadow: #9A9A9A 0px 4px 0px 0px; 
+}
