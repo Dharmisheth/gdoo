@@ -190,6 +190,37 @@ function page() {
               </div>
             </div>
           </div>
+
+          <div className="px-5">
+            <div className="grid justify-center gap-2 pt-8">
+              <p className="font-semibold text-xl">Visit Popup Store</p>
+              <div className="grid grid-flow-col gap-4">
+              <img src="/Rectangle.png"></img>
+              <img src="/Rectangle2.png"></img>
+              </div>
+            </div>
+          </div>
+
+          <div className="px-5">
+            <div className="grid justify-center gap-2 pt-6">
+              <p className="font-semibold text-xl">Play Gacha</p>
+              <div className="grid grid-flow-col gap-4">
+              <img src="/Rectangle3.png"></img>
+              <img src="/Rectangle4.png"></img>
+              </div>
+            </div>
+          </div>
+
+          <div className="px-5">
+            <div className="grid justify-center gap-2 pt-6">
+              <p className="font-semibold text-xl">Latest Products</p>
+              <div className="grid grid-flow-col gap-4">
+              <img src="/Rectangle5.png"></img>
+              <img src="/Rectangle6.png"></img>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </>
