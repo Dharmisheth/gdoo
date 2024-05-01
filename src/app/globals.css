@@ -116,3 +116,7 @@ body {
   /* This ensures clicks pass through to elements below */
   border-radius: 12px;
 }
+
+.box{
+  box-shadow: 0px -8px 16px 0px #1F540F66;
+}
