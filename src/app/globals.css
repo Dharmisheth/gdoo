@@ -13,13 +13,13 @@ body {
 }
 
 .container {
-  background-image: url("/image1.png");
+  background-image: url("/image.png");
   background-size: cover;
   background-position: center;
   background-color: #fff84d;
   margin: auto;
   max-width: 375px;
-  min-height: 100vh;
+  height: auto;
 }
 
 .block {
