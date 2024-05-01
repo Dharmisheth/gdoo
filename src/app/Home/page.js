@@ -8,6 +8,7 @@ function page() {
           <div className="flex justify-between px-5 pt-14 ">
             <p className="text-3xl font-bold">Aries, Welcome to Gdooo</p>
             <svg
+              className="mt-2"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -23,8 +24,8 @@ function page() {
               />
             </svg>
           </div>
-          
-          <div className="pt-8">
+
+          {/* <div className="pt-8">
             <div className="grid grid-flow-row justify-center px-4 relative">
               <div className="">
                 <img src="/CardBG.png"></img>
@@ -42,6 +43,26 @@ function page() {
                 </div>
               </div>
             </div>
+          </div> */}
+
+          <div className="px-4 pt-8">
+            <div class="image-container rounded-2xl">
+              <img src="/CardBG.png" alt="Descriptive Alt Text" className="" />
+
+              <div class="absolute inset-0 z-20 grid-flow-row px-8 pt-6 pb-5">
+                <p class="text-black text-[19px] font-bold">
+                  Win Exciting Prizes
+                </p>
+                <p class="text-black text-xs">
+                  Play Gacha Game and earn Sweetballs
+                </p>
+                <div className="font-bold pt-3">
+                  <button className="submit1 text-sm rounded-full px-6 py-1">
+                    Explore
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="pt-8">
@@ -49,6 +70,7 @@ function page() {
               <div className="text-center">
                 <button className="homebtn text-sm rounded-xl px-4 py-4">
                   <svg
+                    className=""
                     width="29"
                     height="26"
                     viewBox="0 0 29 26"
@@ -109,7 +131,7 @@ function page() {
                 <p className="mt-3 text-xs flex justify-center">Wallet</p>
               </div>
 
-              <div  className="text-center">
+              <div className="text-center">
                 <button className="homebtn text-sm rounded-xl px-4 py-4">
                   <svg
                     width="29"
@@ -136,19 +158,34 @@ function page() {
             <div className="grid grid-flow-row justify-center px-4 relative">
               <div className="bg-black rounded-xl card1">
                 <img src="/Capa.png" className="border rounded-xl"></img>
-                {/* <div className="card1 absolute top-0 w-full rounded-xl"></div> */}
-                <div className="absolute top-0 left-8 right-0 p-4">
-                    <div className="grid grid-flow-col gap-28">
+                <div className="absolute top-0 left-4 right-0 p-4">
+                  <div className="grid grid-cols-2 gap-28 px-[17px] ">
                     <p className="font-bold text-white text-2xl">Gdooo</p>
-                    <p className="font-normal text-sm text-white">Anti Matter</p>
+                    <p className="font-normal text-xs text-white text-center pt-2">
+                      Anti Matter
+                    </p>
+                  </div>
+                  <div className="grid grid-flow-col gap-3 pt-3">
+                    <div>
+                      <img src="/profile.png" className="pl-3"></img>
                     </div>
-                    <div className="grid grid-flow-col">
-                        <img src="/profile.png"></img>
-                        <p className="font-bold text-2xl text-white">Steph Golik</p>
-                        <div>
-                            <div></div>
-                        </div>
+                    <div className="pr-12">
+                      <p className="font-bold text-[23px] text-white pb-3">
+                        Steph Golik
+                      </p>
+                      <div className="grid grid-flow-row">
+                        <p className="font-normal text-xs text-white">
+                          ID No : 123456789
+                        </p>
+                        <p className="font-normal text-xs text-white">
+                          Join : 08/08/2024
+                        </p>
+                        <p className="font-normal text-xs text-white">
+                          Expire : 08/08/2025
+                        </p>
+                      </div>
                     </div>
+                  </div>
                 </div>
               </div>
             </div>

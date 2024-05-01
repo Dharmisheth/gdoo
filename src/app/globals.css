@@ -8,17 +8,15 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
-
-.container{
-  background-image: url('/image.png');
+.container {
+  background-image: url("/image.png");
   background-size: cover;
   background-position: center;
-  background-color: #FFF84D;
+  background-color: #fff84d;
   margin: auto;
   max-width: 375px;
   min-height: 100vh;
@@ -26,66 +24,95 @@ body {
 
 .block {
   display: block;
-  border: 1px solid #E8E246;
+  border: 1px solid #e8e246;
   box-shadow: 0px 3px 0px rgba(255, 253, 200);
 }
 
 .submit {
-  background-color: #B5A7F4;
+  background-color: #b5a7f4;
   color: white;
   box-shadow: rgba(129, 119, 173, 1) 0px 3px 0px 0px;
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.btn{
-  background-color: #B5A7F4;
+.btn {
+  background-color: #b5a7f4;
 }
 
-.abc{
+.abc {
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 34px;
   padding-bottom: 34px;
 }
 
-.container2{
-  background-image: url('/image.png');
+.container2 {
+  background-image: url("/image.png");
   background-size: cover;
   background-position: center;
-  background-color: #9F8CF0;
+  background-color: #9f8cf0;
   margin: auto;
   max-width: 375px;
   min-height: 100vh;
 }
 
-.svg{
+.svg {
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
-
 .submit1 {
-  background-color: #FD9318;
+  background-color: #fd9318;
   color: white;
   box-shadow: rgba(129, 119, 173, 1) 0px 3px 0px 0px;
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.bcd{
-  padding: 190px 31px 200px 30px ;
+.bcd {
+  padding: 190px 31px 200px 30px;
 }
 
-.card{
-  background: linear-gradient(90.43deg, #9F8CF0 0.37%, rgba(178, 163, 243, 0.66) 53.52%, rgba(145, 127, 218, 0.22) 100.84%);
+.card {
+  background: linear-gradient(90.43deg,
+      #9f8cf0 0.37%,
+      rgba(178, 163, 243, 0.66) 53.52%,
+      rgba(145, 127, 218, 0.22) 100.84%);
   size: cover;
-  width:92%;
-  height: 100%;  
+  width: 92%;
+  height: 100%;
 }
 
-.homebtn{
-  background-color: #9F8CF0;
-  box-shadow: #8177AD 0px 6px 0px 0px;
+.homebtn {
+  background-color: #9f8cf0;
+  box-shadow: #8177ad 0px 6px 0px 0px;
 }
 
-.card1{
-  box-shadow: #9A9A9A 0px 4px 0px 0px; 
+.card1 {
+  box-shadow: #454545 0px 4px 0px 0px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90.43deg,
+      #9f8cf0 0.37%,
+      rgba(178, 163, 243, 0.66) 53.52%,
+      rgba(145, 127, 218, 0.22) 100.84%);
+  pointer-events: none;
+  /* This ensures clicks pass through to elements below */
+  border-radius: 12px;
 }
