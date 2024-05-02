@@ -1,6 +1,10 @@
+"use client";
 import React from "react";
-
-function page() {
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay, Navigation } from "swiper/modules";
+function Homepage() {
   return (
     <>
       <div className="main main overflow-auto">
@@ -25,50 +29,85 @@ function page() {
             </svg>
           </div>
 
-          {/* <div className="pt-8">
-            <div className="grid grid-flow-row justify-center px-4 relative">
-              <div className="">
-                <img src="/CardBG.png"></img>
-                <div className="absolute top-0 card w-full rounded-xl"></div>
-              </div>
-              <div className="absolute top-0 left-8 right-0 p-4 ">
-                <p className="font-bold text-[19px]">Win Exciting Prizes</p>
-                <p className="font-normal text-[12px] pt-0.5">
-                  Play Gacha Game and earn Sweetballs
-                </p>
-                <div className="font-bold pt-4">
-                  <button className="submit1 text-sm rounded-full px-5 py-1">
-                    Explore
-                  </button>
+          <Swiper
+            spaceBetween={8} // Adjust as needed
+            slidesPerView={1.1}
+            centeredSlides={true} // Center the slides
+            initialSlide={1}
+            modules={[Autoplay, Navigation]}
+            loop={true}
+            autoplay={{ delay: 2000 }}
+          >
+            <SwiperSlide>
+              <div className=" pt-8">
+                <div class="image-container">
+                  <img src="/CardBG.png" className="" />
+                  <div class="absolute inset-0 z-20 px-8 pt-6 pb-5">
+                    <p class=" text-[19px] font-bold">Win Exciting Prizes</p>
+                    <p class=" text-xs">Play Gacha Game and earn Sweetballs</p>
+                    <div className="font-bold pt-3">
+                      <button className="submit1 text-sm rounded-full px-6 py-1">
+                        Explore
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div> */}
-
-          <div className="px-4 pt-8">
-            <div class="image-container rounded-2xl">
-              <img src="/CardBG.png" alt="Descriptive Alt Text" className="" />
-
-              <div class="absolute inset-0 z-20 grid-flow-row px-8 pt-6 pb-5">
-                <p class="text-black text-[19px] font-bold">
-                  Win Exciting Prizes
-                </p>
-                <p class="text-black text-xs">
-                  Play Gacha Game and earn Sweetballs
-                </p>
-                <div className="font-bold pt-3">
-                  <button className="submit1 text-sm rounded-full px-6 py-1">
-                    Explore
-                  </button>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className=" pt-8">
+                <div class="image-container">
+                  <img src="/CardBG.png" className="" />
+                  <div class="absolute inset-0 z-20 px-8 pt-6 pb-5">
+                    <p class=" text-[19px] font-bold">Win Exciting Prizes</p>
+                    <p class=" text-xs">Play Gacha Game and earn Sweetballs</p>
+                    <div className="font-bold pt-3">
+                      <button className="submit1 text-sm rounded-full px-6 py-1">
+                        Explore
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className=" pt-8">
+                <div class="image-container">
+                  <img src="/CardBG.png" className="" />
+                  <div class="absolute inset-0 z-20 px-8 pt-6 pb-5">
+                    <p class=" text-[19px] font-bold">Win Exciting Prizes</p>
+                    <p class=" text-xs">Play Gacha Game and earn Sweetballs</p>
+                    <div className="font-bold pt-3">
+                      <button className="submit1 text-sm rounded-full px-6 py-1">
+                        Explore
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className=" pt-8">
+                <div class="image-container">
+                  <img src="/CardBG.png" className="" />
+                  <div class="absolute inset-0 z-20 px-8 pt-6 pb-5">
+                    <p class=" text-[19px] font-bold">Win Exciting Prizes</p>
+                    <p class=" text-xs">Play Gacha Game and earn Sweetballs</p>
+                    <div className="font-bold pt-3">
+                      <button className="submit1 text-sm rounded-full px-6 py-1">
+                        Explore
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
 
           <div className="pt-8">
             <div className="grid grid-cols-4 gap-6 justify-center px-5">
               <div className="text-center">
-                <button className="homebtn text-sm rounded-xl px-4 py-4">
+                <button className="homebtn">
                   <svg
                     className=""
                     width="29"
@@ -90,7 +129,7 @@ function page() {
               </div>
 
               <div className="text-center">
-                <button className="homebtn text-sm rounded-xl px-4 py-4">
+                <button className="homebtn">
                   <svg
                     width="27"
                     height="26"
@@ -111,7 +150,7 @@ function page() {
               </div>
 
               <div className="text-center">
-                <button className="homebtn text-sm rounded-xl px-4 py-4">
+                <button className="homebtn">
                   <svg
                     width="29"
                     height="24"
@@ -132,7 +171,7 @@ function page() {
               </div>
 
               <div className="text-center">
-                <button className="homebtn text-sm rounded-xl px-4 py-4">
+                <button className="homebtn">
                   <svg
                     width="29"
                     height="24"
@@ -156,8 +195,11 @@ function page() {
 
           <div className="pt-8">
             <div className="grid grid-flow-row justify-center px-4 relative">
-              <div className="bg-black rounded-xl card1">
-                <img src="/Capa.png" className="border rounded-xl"></img>
+              <div className="bg-black rounded-xl shadow-[#454545_0px_4px_0px_0px]">
+                <img
+                  src="/Capa.png"
+                  className="border rounded-xl"
+                ></img>
                 <div className="absolute top-0 left-4 right-0 p-4">
                   <div className="grid grid-cols-2 gap-28 px-[17px] ">
                     <p className="font-bold text-white text-2xl">Gdooo</p>
@@ -191,59 +233,92 @@ function page() {
             </div>
           </div>
 
-          <div className="">
-            <div className="px-5">
-              <div className="grid justify-center gap-2 pt-8">
-                <p className="font-semibold text-xl">Visit Popup Store</p>
-                <div className="grid grid-flow-col gap-4">
+          <div className="pl-5">
+            <div className="grid gap-2 pt-8">
+              <p className="font-semibold text-xl pb-4">Visit Popup Store</p>
+            </div>
+            <div className="swiper">
+            <Swiper
+                spaceBetween={8} // Adjust as needed
+                slidesPerView={2.2}
+                initialSlide={2}
+                modules={[ Navigation]}
+                loop={true}
+                autoplay={{ delay: 2000 }}
+              >
+                <SwiperSlide>
                   <img src="/Rectangle.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
                   <img src="/Rectangle2.png"></img>
-                </div>
-              </div>
-            </div>
-
-            <div className="px-5">
-              <div className="grid justify-center gap-2 pt-6">
-                <p className="font-semibold text-xl">Play Gacha</p>
-                <div className="grid grid-flow-col gap-4">
-                  <img src="/Rectangle3.png"></img>
-                  <img src="/Rectangle4.png"></img>
-                </div>
-              </div>
-            </div>
-
-            <div className="px-5">
-              <div className="grid justify-center gap-2 pt-6">
-                <p className="font-semibold text-xl">Latest Products</p>
-                <div className="relative grid grid-flow-col gap-4">
-                  <img src="/Rectangle5.png"></img>
-                  <img src="/Rectangle6.png"></img>
-                </div>
-              </div>
-            </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/Rectangle.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/Rectangle2.png"></img>
+                </SwiperSlide>
+            </Swiper>
+            </div>   
           </div>
 
-          <div className="flex justify-center">
-            <div className="absolute flex justify-center -bottom-[414px]">
-              <button className="rounded-full  bg-black size-12 flex items-center justify-center">
-                <svg
-                  className=""
-                  width="18"
-                  height="20"
-                  viewBox="0 0 18 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 9V6C4 3.23858 6.23858 1 9 1C11.419 1 13.4367 2.71776 13.9 5M5.8 19H12.2C13.8802 19 14.7202 19 15.362 18.673C15.9265 18.3854 16.3854 17.9265 16.673 17.362C17 16.7202 17 15.8802 17 14.2V13.8C17 12.1198 17 11.2798 16.673 10.638C16.3854 10.0735 15.9265 9.6146 15.362 9.32698C14.7202 9 13.8802 9 12.2 9H5.8C4.11984 9 3.27976 9 2.63803 9.32698C2.07354 9.6146 1.6146 10.0735 1.32698 10.638C1 11.2798 1 12.1198 1 13.8V14.2C1 15.8802 1 16.7202 1.32698 17.362C1.6146 17.9265 2.07354 18.3854 2.63803 18.673C3.27976 19 4.11984 19 5.8 19Z"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
+          <div className="pl-5">
+            <div className="grid gap-2 pt-8">
+              <p className="font-semibold text-xl pb-4">Play Gacha</p>
             </div>
+            <div className="swiper">
+            <Swiper
+                spaceBetween={8} // Adjust as needed
+                slidesPerView={2.2}
+                initialSlide={2}
+                modules={[ Navigation]}
+                loop={true}
+                autoplay={{ delay: 2000 }}
+              >
+                <SwiperSlide>
+                  <img src="/Rectangle3.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/Rectangle4.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/Rectangle3.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/Rectangle4.png"></img>
+                </SwiperSlide>
+            </Swiper>
+            </div>   
+          </div>
+
+          
+          <div className="pl-5">
+            <div className="grid gap-2 pt-8">
+              <p className="font-semibold text-xl pb-4">Latest Product</p>
+            </div>
+            <div className="swiper">
+            <Swiper
+                spaceBetween={8} // Adjust as needed
+                slidesPerView={2.2}
+                initialSlide={2}
+                modules={[ Navigation]}
+                loop={true}
+                autoplay={{ delay: 2000 }}
+              >
+                <SwiperSlide>
+                  <img src="/Rectangle5.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/Rectangle6.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/Rectangle5.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/Rectangle6.png"></img>
+                </SwiperSlide>
+            </Swiper>
+            </div>   
           </div>
 
           <div className="rounded-t-xl bg-[#FD9318] box px-1">
@@ -349,4 +424,4 @@ function page() {
   );
 }
 
-export default page;
+export default Homepage;
