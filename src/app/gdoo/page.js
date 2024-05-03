@@ -36,9 +36,9 @@
 // }
 
 // export default page;
-
+'use client'
 import React from 'react'
-
+import Card1 from '../components/card1'
 function page() {
   return (
     <>

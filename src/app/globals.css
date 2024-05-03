@@ -61,10 +61,6 @@ body {
 }
 
 .submit1 {
-  /* background-color: #fd9318;
-  color: white;
-  box-shadow: rgba(129, 119, 173, 1) 0px 3px 0px 0px;
-  border: 1px solid rgba(255, 255, 255, 1); */
   @apply 
   bg-[#fd9318]
   text-white

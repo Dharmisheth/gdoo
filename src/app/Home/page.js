@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay, Navigation } from "swiper/modules";
+
 function Homepage() {
   return (
     <>
@@ -229,6 +230,7 @@ function Homepage() {
               </div>
             </div>
           </div>
+          
           <div className="pb-24">
             <div className="pl-5">
               <div className="grid gap-2 pt-8">
@@ -440,6 +442,7 @@ function Homepage() {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </>
